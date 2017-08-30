@@ -24,4 +24,64 @@ public class TextInput {
 		
 	
 }
+	
+	public static void choice() {
+		System.out.println("Would you like to restart?");
+		switch(in.nextLine()) {
+		
+		case "Yes":
+			Main.main(null);
+			break;
+			
+		case "yes":
+			Main.main(null);
+			break;
+			
+		case "y":
+			Main.main(null);
+			break;
+			
+		case "No":
+			System.out.println("Press ENTER to finish.");
+			try {
+				in2.readLine();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.exit(0);
+			break;
+			
+		case "no":
+			System.out.println("Press ENTER to finish.");
+			try {
+				in2.readLine();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.exit(0);
+			break;
+			
+		case "n":
+			System.out.println("Press ENTER to finish.");
+			try {
+				in2.readLine();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.exit(0);
+			break;
+			
+		default:
+			System.out.println("That is not a valid option. Please try again.");
+			choice();
+			break;
+		
+		
+		
+		}
+		System.out.println("Press ENTER to finish.");
+	}
 }

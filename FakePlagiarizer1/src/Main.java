@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.Timer;
 
 public class Main {
@@ -11,6 +12,7 @@ public class Main {
 	public static int n2 = rand.nextInt(300) + 1;
 	public static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	public static javax.management.timer.Timer time = new javax.management.timer.Timer();
+	public static Scanner in2 = new Scanner(System.in);
 	
 	public static void main(String[] args){
 		
@@ -40,13 +42,10 @@ public class Main {
 			System.out.println(n + "% Plagiarism.");
 		}
 		
+		TextInput.choice();
+		
 //		System.out.println(n2 + "  " + i);/
-		try {
-			Thread.sleep(10);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	    
 		
 		
