@@ -54,6 +54,7 @@ public class Main {
 	
 	public static void CheatCheck() {
 		System.out.println("ERROR: Minimum Character Count Not Met (50 Characters)");
+		TextInput.Text();
 	}
 
 }
