@@ -13,11 +13,15 @@ public class Main {
 	public static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	public static javax.management.timer.Timer time = new javax.management.timer.Timer();
 	public static Scanner in2 = new Scanner(System.in);
+	public static int i = rand.nextInt(300) + 1;
 	
 	public static void main(String[] args){
 		
 		
 //		System.out.println(n + "% Plagiarism.");
+//		System.out.println("Whats your name?");
+//		String name = in2.nextLine();
+//		System.out.println("Hi " + name);
 		TextInput.Text();
 		
 	}
@@ -30,7 +34,6 @@ public class Main {
 //			System.out.println("i: " + i + " n2: " + n2);
 //			break;
 //		}
-		int i = rand.nextInt(300) + 1;
 
 		if(i == n2 && i <= 100) {
 			System.out.println(rand.nextInt(20) + "% Plagiarism.");
@@ -53,7 +56,6 @@ public class Main {
 	
 	public static void CheatCheck() {
 		System.out.println("ERROR: Minimum Character Count Not Met (50 Characters)");
-		TextInput.Text();
 	}
 
 }

@@ -15,7 +15,7 @@ public class TextInput {
 	public static void Text() {
 		
 		System.out.println("Input the text you'd like to check for plagiarism.");
-		if(in.nextLine().length() <= 50) {
+		if(FakePlagiarizerGUI.txtTypeTextHere.getText().length() <= 50) {
 			Main.CheatCheck();
 		}else {
 			Main.chooser();
